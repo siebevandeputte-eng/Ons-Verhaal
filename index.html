@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Voor mijn liefste schatje ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:linear-gradient(135deg,#fff0f5,#ffe4ec,#fff8fb);
+  color:#4b2633;
+  overflow-x:hidden;
+}
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:20;
+  display:flex;justify-content:center;gap:8px;flex-wrap:wrap;
+  padding:12px;background:rgba(255,255,255,.82);backdrop-filter:blur(12px);
+  box-shadow:0 2px 18px rgba(120,40,70,.12)
+}
+nav a{color:#8f3157;text-decoration:none;font-weight:bold;padding:8px 12px;border-radius:20px}
+nav a:hover{background:#ffe0ea}
+section{min-height:100vh;padding:95px 7% 70px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.hero{text-align:center;position:relative}
+.badge{font-size:15px;letter-spacing:2px;text-transform:uppercase;color:#a34a6b;margin-bottom:18px}
+h1{font-size:clamp(48px,10vw,100px);color:#a92f5d;line-height:1.02}
+h2{font-size:clamp(30px,5vw,52px);margin-bottom:18px;color:#9d3159;text-align:center}
+.subtitle{font-size:clamp(18px,3vw,25px);margin:18px auto;max-width:700px;line-height:1.6}
+.btn{
+  border:0;background:#b83262;color:white;padding:14px 22px;border-radius:30px;
+  font-size:16px;font-weight:bold;cursor:pointer;box-shadow:0 8px 20px rgba(184,50,98,.25);
+  transition:.2s
+}
+.btn:hover{transform:translateY(-2px);background:#a12855}
+.heart{position:absolute;animation:float 5s ease-in-out infinite;opacity:.65;font-size:28px}
+.h1{left:8%;top:30%}.h2{right:10%;top:24%;animation-delay:1s}.h3{left:18%;bottom:18%;animation-delay:2s}.h4{right:17%;bottom:24%;animation-delay:3s}
+@keyframes float{50%{transform:translateY(-25px) rotate(8deg)}}
+.container{width:min(1000px,100%)}
+.cardgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;width:100%;margin-top:25px}
+.card{
+  background:rgba(255,255,255,.8);border:1px solid #ffd2df;border-radius:24px;padding:24px;
+  box-shadow:0 10px 30px rgba(110,30,60,.08);transition:.25s
+}
+.card:hover{transform:translateY(-5px)}
+.card h3{color:#a92f5d;margin-bottom:10px;font-size:21px}
+.card p{line-height:1.65}
+.timeline{width:min(850px,100%);position:relative;margin-top:20px}
+.timeline:before{content:"";position:absolute;left:20px;top:0;bottom:0;width:3px;background:#f3b1c7}
+.event{position:relative;margin:0 0 25px 55px;background:white;padding:20px;border-radius:20px;box-shadow:0 8px 25px rgba(100,20,50,.08)}
+.event:before{content:"❤";position:absolute;left:-48px;top:18px;background:#b83262;color:white;border-radius:50%;width:35px;height:35px;text-align:center;line-height:35px}
+.event strong{color:#a92f5d}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px;width:100%;margin-top:25px}
+.photo{
+  min-height:190px;border-radius:20px;background:linear-gradient(135deg,#ffd8e4,#fff);
+  border:2px dashed #eaa2ba;display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:20px;color:#9b4c68;font-weight:bold;overflow:hidden
+}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.letter{
+  background:#fffdf9;padding:35px;max-width:800px;border-radius:8px;
+  box-shadow:0 12px 35px rgba(90,40,30,.13);line-height:1.85;font-family:Georgia,serif;font-size:18px;
+  position:relative
+}
+.letter:before{content:"💌";font-size:35px;position:absolute;right:22px;top:18px}
+.hidden{display:none;margin-top:20px;background:#fff;padding:25px;border-radius:20px;text-align:center;line-height:1.7}
+.memory-box{margin-top:25px;text-align:center}
+footer{padding:40px 20px;text-align:center;background:#8e294f;color:white}
+.small{font-size:13px;opacity:.8;margin-top:10px}
+#hearts{position:fixed;inset:0;pointer-events:none;z-index:30}
+.flying{position:absolute;animation:rise 3s linear forwards;font-size:22px}
+@keyframes rise{from{transform:translateY(0) scale(1);opacity:1}to{transform:translateY(-110vh) scale(1.5) rotate(30deg);opacity:0}}
+@media(max-width:600px){nav{font-size:13px}nav a{padding:7px 8px}.letter{padding:25px 20px}.event{margin-left:45px}}
+</style>
+</head>
+<body>
+
+<div id="hearts"></div>
+
+<nav>
+  <a href="#home">❤️ Home</a>
+  <a href="#verhaal">Ons verhaal</a>
+  <a href="#waarom">Waarom?</a>
+  <a href="#fotos">Foto's</a>
+  <a href="#brief">Brief</a>
+  <a href="#slot">❤️</a>
+</nav>
+
+<section id="home" class="hero">
+  <span class="heart h1">❤</span><span class="heart h2">♡</span>
+  <span class="heart h3">❤</span><span class="heart h4">♡</span>
+  <div class="badge">Een kleine website voor de mooiste persoon</div>
+  <h1>Voor mijn liefste schatje ❤️</h1>
+  <p class="subtitle">Een website vol met herinneringen, lieve woorden en alles wat ik nog tegen jou wil zeggen.</p>
+  <button class="btn" onclick="showLove()">Klik hier, speciaal voor jou 💗</button>
+  <div id="homeMessage" class="hidden">Als jij dit leest: weet dat ik deze hele website voor jou heb gemaakt. Omdat jij gewoon iemand bent die een speciale plek in mijn hart heeft. ❤️</div>
+</section>
+
+<section id="verhaal">
+  <div class="container">
+    <h2>Ons verhaal 📖</h2>
+    <p class="subtitle">Twee mensen, ontelbare momenten, één mooi verhaal. ❤️</p>
+    <div class="timeline">
+      <div class="event"><strong>Onze eerste ontmoeting - SPLIT</strong><p>Op SPLIT begon eigenlijk het allereerste hoofdstuk van ons verhaal. We leerden elkaar kennen en brachten daar samen tijd door, zonder te weten wat de toekomst voor ons in petto had. En toch is het grappigste misschien wel dat ik je toen had afgewezen. Als ik daar nu aan terugdenk, kan ik er alleen maar om lachen, want als ik toen had geweten dat jij later zo’n belangrijke persoon voor mij zou worden, had ik misschien wel heel anders gereageerd. Soms besef je pas achteraf dat een bepaalde ontmoeting veel belangrijker was dan je op dat moment dacht. Voor mij was SPLIT het begin van iets waarvan ik toen nog helemaal niet wist dat het ooit zo mooi zou worden. ❤️</p></div>
+      <div class="event"><strong>Steengoedcup — We vonden elkaar opnieuw ❤️</strong><p>Na SPLIT waren onze wegen even wat meer uit elkaar gegaan, maar op de Steengoedcup zag ik je opnieuw. En deze keer voelde het anders. We begonnen weer met elkaar te praten en zonder dat ik het op voorhand wist, werd dat het begin van iets heel moois. Hoe langer we praatten, hoe meer ik merkte hoe fijn het eigenlijk was om weer contact met jou te hebben. Het voelde vertrouwd, alsof er ondanks de tijd eigenlijk niet zoveel veranderd was. Ik had toen nog geen idee waar al die gesprekken uiteindelijk toe zouden leiden, maar achteraf gezien ben ik ontzettend blij dat ik op die dag opnieuw naar je toe ben gestapt. Want soms heb je iemand al eens ontmoet zonder te beseffen hoe bijzonder die persoon is. En soms krijg je gewoon een tweede kans om dat wél te ontdekken. ❤️</p></div>
+      <div class="event"><strong>3 januari — De dag waarop wij wij werden ❤️</strong><p>3 januari is voor mij niet zomaar een datum. Het is de dag waarop alles wat tussen ons aan het groeien was, eindelijk veranderde in iets echt. Na al onze gesprekken, het opnieuw vinden van elkaar en alle momenten samen, was dit de dag waarop we officieel samen werden. Ik had op dat moment misschien nooit kunnen beseffen hoeveel deze datum voor mij zou gaan betekenen. Want vanaf die dag was jij niet meer gewoon iemand met wie ik graag praatte, maar mijn lief, mijn persoon en iemand die een heel speciale plaats in mijn hart kreeg. Als ik nu terugkijk naar hoe alles begonnen is, vind ik het ergens prachtig dat ik je op SPLIT ooit heb afgewezen, om je jaren later opnieuw tegen te komen en uiteindelijk toch samen te zijn. Misschien moest het gewoon zo lopen. 3 januari zal daarom altijd één van mijn favoriete datums blijven. De dag waarop niet alleen een relatie begon, maar waarop ik het geluk kreeg om jou mijn lief te mogen noemen. ❤️</p></div>
+      <div class="event"><strong>6 maanden samen ❤️</strong><p>Zes maanden alweer… ❤️ Zes maanden vol met mooie momenten, lachen, knuffels, gesprekken en herinneringen die ik voor altijd wil blijven koesteren. In die zes maanden ben jij steeds belangrijker voor mij geworden en heb je een plekje in mijn hart gekregen dat niemand anders kan innemen. Als ik terugkijk naar de dag waarop we samen kwamen, had ik nooit kunnen weten hoeveel geluk jij mij zou brengen. Met jou voelt zelfs een gewone dag bijzonder. Ik ben zo dankbaar voor alles wat we samen hebben meegemaakt en voor alle momenten die nog op ons wachten. Zes maanden samen, en ik hoop dat dit nog maar het begin is van iets heel moois. Ik hou ontzettend veel van jou, Merel. ❤️</p></div>
+      <div class="event"><strong>Vandaag — Nog altijd jij</strong><p>En dan zijn we hier, bij ons nu. Als ik terugkijk naar alles wat we samen hebben meegemaakt, besef ik pas hoeveel er in zo’n korte tijd kan veranderen. Van elkaar kennen, elkaar terugvinden en uiteindelijk samen worden, naar alles wat we vandaag samen zijn. Elke dag leer ik jou een beetje beter kennen en elke dag ontdek ik opnieuw hoeveel ik van jou hou. Jij bent iemand bij wie ik mezelf kan zijn, met wie ik kan lachen om de kleinste dingen en bij wie zelfs de simpelste momenten speciaal voelen. Ik weet niet precies wat de toekomst voor ons in petto heeft, maar één ding weet ik wel: ik wil nog heel veel mooie herinneringen met jou maken. Dit is ons verhaal tot nu toe, maar hopelijk nog lang niet het einde. ❤️ Ik hou van jou, Merel. Vandaag, morgen en alle mooie momenten die nog komen. ❤️</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="waarom">
+  <div class="container">
+    <h2>Waarom ik zo van jou hou 🥹</h2>
+    <p class="subtitle">Het zijn niet alleen grote dingen. Het zijn vooral alle kleine dingen die jou jou maken.</p>
+    <div class="cardgrid">
+      <div class="card"><h3>Jouw persoonlijkheid</h3><p>Omdat jij jezelf bent. Je hoeft je niet anders voor te doen om speciaal te zijn. Precies wie jij bent, is degene die ik zo graag bij mij heb.</p></div>
+      <div class="card"><h3>Jouw glimlach</h3><p>Een glimlach van jou kan echt mijn hele dag beter maken. Zelfs wanneer je misschien niet doorhebt hoeveel effect je op mij hebt.</p></div>
+      <div class="card"><h3>De kleine momenten</h3><p>De gesprekken, het lachen om complete onzin, samen zijn zonder iets bijzonders te moeten doen. Dat zijn vaak mijn favoriete momenten.</p></div>
+      <div class="card"><h3>Hoe jij mij laat voelen</h3><p>Bij jou kan ik gewoon mezelf zijn. Dat gevoel is iets wat ik enorm waardeer en nooit vanzelfsprekend wil vinden.</p></div>
+      <div class="card"><h3>Onze herinneringen</h3><p>Van de momenten die we al hebben meegemaakt tot de momenten waar we later nog om zullen lachen. Ik wil ze allemaal blijven verzamelen.</p></div>
+      <div class="card"><h3>Omdat jij jij bent ❤️</h3><p>En misschien is dat uiteindelijk de simpelste reden. Er is maar één Merel. En ik ben ontzettend blij dat jij in mijn leven bent.</p></div>
+      <div class="card"><h3>Je bent er altijd voor mij</h3><p>Ik hou ervan dat ik weet dat ik bij jou terechtkan wanneer ik ergens mee zit, maar ook wanneer ik gewoon iets leuks wil vertellen. Het gevoel dat er iemand is die naar mij luistert en om mij geeft, betekent enorm veel voor mij. Jij laat me voelen dat ik er nooit alleen voor sta.</p></div>
+      <div class="card"><h3>Je begrijpt mij</h3><p>Ik hou ervan dat je mij steeds beter leert kennen en vaak aanvoelt hoe ik mij voel. Soms hoef ik niet eens veel uit te leggen voordat jij begrijpt wat ik bedoel. Dat gevoel van elkaar echt begrijpen maakt onze band voor mij zo bijzonder.</p></div>
+      <div class="card"><h3>Je bent uniek voor mij</h3><p>Er is niemand precies zoals jij. De manier waarop je praat, lacht, reageert en gewoon jezelf bent, maakt jou voor mij uniek. Ik hou niet van een versie van jou die perfect zou moeten zijn; ik hou van jou zoals je echt bent.</p></div>
+      <div class="card"><h3>Omdat jij mijn persoon bent</h3><p>Uiteindelijk kan ik honderd redenen bedenken waarom ik van jou hou, maar geen enkele lijst kan het helemaal uitleggen. Jij bent iemand die ik niet meer uit mijn leven zou willen missen. Ik ben gewoon ontzettend blij dat ik jou heb leren kennen en dat wij samen ons eigen verhaal mogen schrijven. ❤️</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="fotos">
+  <div class="container">
+    <h2>Onze herinneringen 📸</h2>
+
+    <div class="gallery">
+
+      <div class="photo">
+        <img src="Snapchat-369956855.jpg" alt="Foto 1">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1099499952.jpg" alt="Foto 2">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1000554863.jpg" alt="Foto 3">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1797188815.jpg" alt="Foto 4">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1862216366.jpg" alt="Foto 5">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1867239353.jpg" alt="Foto 6">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-1975656682.jpg" alt="Foto 7">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-2076170937.jpg" alt="Foto 8">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-2091723527.jpg" alt="Foto 9">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-2126505821.jpg" alt="Foto 10">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-395280187.jpg" alt="Foto 11">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-931270590.jpg" alt="Foto 12">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-981032769.jpg" alt="Foto 13">
+      </div>
+
+      <div class="photo">
+        <img src="Snapchat-995545007.jpg" alt="Foto 14">
+      </div>
+
+      <div class="photo">
+        <img src="1.jpg" alt="Foto 15">
+      </div>
+
+      <div class="photo">
+        <img src="2.jpg" alt="Foto 16">
+      </div>
+
+      <div class="photo">
+        <img src="3.jpg" alt="Foto 17">
+      </div>
+
+      <div class="photo">
+        <img src="4.jpg" alt="Foto 18">
+      </div>
+
+      <div class="photo">
+        <img src="5.jpg" alt="Foto 19">
+      </div>
+
+      <div class="photo">
+        <img src="6.jpg" alt="Foto 20">
+      </div>
+
+      <div class="photo">
+        <img src="7.jpg" alt="Foto 21">
+      </div>
+
+      <div class="photo">
+        <img src="8.jpg" alt="Foto 22">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="brief">
+  <div class="container" style="display:flex;flex-direction:column;align-items:center">
+    <h2>Een brief voor jou 💌</h2>
+    <div class="letter">
+      Lieve Merel,<br><br>
+      Waar moet ik eigenlijk beginnen? Er zijn zoveel dingen die ik tegen jou wil zeggen en zoveel momenten waar ik aan terugdenk, dat ik waarschijnlijk nooit alles in één brief kan zetten. Toch wil ik het proberen, omdat jij het verdient om te weten hoeveel je voor mij betekent.<br><br>
+      Als ik terugdenk aan hoe ons verhaal begonnen is, vind ik het ergens bijzonder hoe alles uiteindelijk heeft geleid tot waar we nu zijn. We kenden elkaar al van vroeger, van SPLIT, maar toen had ik nooit kunnen denken dat jij later zo’n belangrijke persoon in mijn leven zou worden. En toch kwamen we elkaar opnieuw tegen, begonnen we weer met elkaar te praten en veranderde alles beetje bij beetje.<br><br>
+      Dan kwam 3 januari. De dag waarop we officieel samen werden. Een datum die voor mij voor altijd speciaal zal blijven. Vanaf die dag waren we niet meer gewoon twee mensen die elkaar leuk vonden, maar begonnen we echt aan ons eigen verhaal. En als ik nu terugkijk op alles wat daarna is gebeurd, ben ik zo blij dat ik die stap met jou heb gezet.<br><br>
+      In onze relatie zijn het niet alleen de grote momenten die voor mij belangrijk zijn. Het zijn juist de kleine dingen. De gesprekken die soms nergens over gaan maar toch uren kunnen duren. Samen lachen om iets ontzettend doms. Een berichtje van jou waardoor mijn dag ineens beter wordt. Samen ergens zijn zonder dat we iets bijzonders hoeven te doen. Die momenten lijken misschien klein, maar voor mij zijn ze allesbehalve klein. Ze zijn de momenten waaruit onze relatie bestaat.<br><br>
+      Ik hou ervan dat ik bij jou volledig mezelf kan zijn. Ik hoef mij niet anders voor te doen of na te denken over hoe ik moet zijn. Ik kan gewoon mezelf zijn, met al mijn goede kanten, mijn slechte kanten, mijn gekke momenten en mijn stomme grapjes. En het mooiste vind ik dat jij mij neemt zoals ik ben.<br><br>
+      Jij bent ook iemand die mij ontzettend gelukkig maakt. Soms hoef je echt niets speciaals te doen. Alleen al een berichtje van jou kan genoeg zijn om een glimlach op mijn gezicht te krijgen. Wanneer ik je zie, voelt mijn dag gewoon beter. En wanneer we samen zijn, vergeet ik vaak even alles rondom ons en geniet ik gewoon van het moment met jou.<br><br>
+      Ik hou van jouw persoonlijkheid, van de manier waarop jij bent en van de kleine dingen die jou precies maken wie je bent. Ik hou van je lach, van onze gesprekken, van de momenten waarop we samen helemaal gek kunnen doen en van de momenten waarop we gewoon rustig samen zijn. Ik hou ervan hoe jij mij laat voelen en hoeveel warmte jij in mijn leven brengt.<br><br>
+      Wat ik misschien nog wel het mooiste vind aan ons, is dat we samen blijven groeien. We leren elkaar steeds beter kennen. We ontdekken steeds meer van elkaar, maken nieuwe herinneringen en bouwen verder aan iets dat voor mij ontzettend waardevol is. Natuurlijk zal niet iedere dag perfect zijn, maar ik denk dat dat ook helemaal niet hoeft. Wat belangrijk is, is dat we elkaar blijven kiezen en samen blijven genieten van alles wat op ons pad komt.<br><br>
+      Als ik naar de afgelopen maanden kijk, kan ik alleen maar dankbaar zijn. Dankbaar voor jou, voor onze herinneringen en voor ieder moment dat we samen hebben gehad. Van onze eerste ontmoeting tot het moment waarop we elkaar opnieuw vonden, van 3 januari tot alle dagen daarna. Elk stukje van ons verhaal heeft ons gebracht tot waar we vandaag zijn.<br><br>
+      En hoewel we al zoveel mooie momenten hebben gehad, hoop ik vooral dat dit nog maar het begin is. Ik wil nog zoveel met jou meemaken. Nog veel meer lachen, nog veel meer praten, nog meer herinneringen maken en nog heel veel momenten hebben waar we later samen op kunnen terugkijken en zeggen: "Weet je nog?"<br><br>
+      Ik wil dat je weet dat je ontzettend belangrijk voor mij bent. Niet alleen omdat je mijn lief bent, maar omdat je ook gewoon jij bent. De persoon met wie ik zoveel kan delen, met wie ik kan lachen en bij wie ik mezelf kan zijn. Jij hebt een plaats in mijn leven gekregen die ik nooit zomaar zou willen verliezen.<br><br>
+      Merel, ik weet niet precies wat de toekomst ons allemaal gaat brengen. We kunnen niet weten welke mooie momenten nog op ons wachten of waar ons verhaal ons uiteindelijk naartoe zal brengen. Maar ik weet wel dat ik heel blij ben dat jij op dit moment naast mij staat. Ik wil genieten van wat we nu hebben en van iedere herinnering die we samen nog gaan maken.<br><br>
+      Als ik één ding uit alles wat ik hier heb geschreven zou moeten kiezen, dan is het simpel:<b>ik ben ontzettend blij met jou.</b><br><br>
+      Bedankt voor wie je bent. Bedankt voor alle keren dat je mij hebt laten lachen, voor alle mooie momenten, voor alle gesprekken, voor alle herinneringen en gewoon voor het feit dat jij er bent.<br><br>
+      Ons verhaal begon misschien zonder dat we wisten waar het naartoe zou gaan, maar ondertussen is het één van de mooiste dingen in mijn leven geworden.<br><br>
+      <b>Ik hou van jou, Merel. ❤️</b><br><br>
+      <b>Voor altijd jouw Siebe ❤️</b><br><br>
+    </div>
+  </div>
+</section>
+
+<section id="slot" class="hero">
+  <div class="badge">Nog één ding...</div>
+  <h2>Heb je echt alles gezien? 👀</h2>
+  <p class="subtitle">Klik op de knop. Er staat nog één boodschap voor jou.</p>
+  <button class="btn" onclick="finalMessage()">Open mijn geheime boodschap 💌</button>
+  <div id="secret" class="hidden">
+    <h3 style="color:#a92f5d;font-size:28px;margin-bottom:12px">Merel ❤️</h3>
+    <p>Van alle mensen die ik had kunnen tegenkomen, ben ik gewoon heel blij dat ik jou opnieuw ben tegengekomen. Ik zou onze herinneringen voor geen geld willen missen. En dit is nog maar het begin van ons verhaal. 🥰</p>
+    <br>
+    <button class="btn" onclick="makeHearts()">Nog een beetje liefde? ❤️</button>
+  </div>
+</section>
+
+<footer>
+  Gemaakt met ❤️ voor Merel
+</footer>
+
+<script>
+function showLove(){
+  document.getElementById('homeMessage').classList.remove('hidden');
+  makeHearts();
+}
+function finalMessage(){
+  document.getElementById('secret').classList.remove('hidden');
+  makeHearts();
+}
+function makeHearts(){
+  const box=document.getElementById('hearts');
+  for(let i=0;i<28;i++){
+    const h=document.createElement('div');
+    h.className='flying';
+    h.textContent=['❤️','💕','💗','💖','♡'][Math.floor(Math.random()*5)];
+    h.style.left=Math.random()*100+'vw';
+    h.style.top=(80+Math.random()*20)+'vh';
+    h.style.animationDuration=(2+Math.random()*2)+'s';
+    h.style.fontSize=(16+Math.random()*20)+'px';
+    box.appendChild(h);
+    setTimeout(()=>h.remove(),4500);
+  }
+}
+</script>
+</body>
+</html>
